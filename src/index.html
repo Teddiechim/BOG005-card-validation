@@ -1,14 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="description" content="Ropa para damas, casual y elegante" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="capybara.png" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header id="header">
+      <div id="fondoTextoLogo"><span id="textoLogo">CAPYBARA</span></div>
+      <nav id="navegacion">
+        <span>NUEVO</span>
+        <span>TIENDA</span>
+        <span>ACERCA DE</span>
+        <img alt="" src="img/Line 2.svg" />
+        <span class="material-symbols-outlined"> Home</span>
+        <span class="material-symbols-outlined"> favorite </span>
+        <span class="material-symbols-outlined"> search </span>
+        <span class="material-symbols-outlined"> shopping_cart </span>
+        <span class="material-symbols-outlined"> person </span>
+      </nav>
+    </header>
+    <main>
+      <!-- Imagen landing Page -->
+      <figure id="imageLandingContainer">
+        <img
+          alt="anuncio mujer nueva temporada regreso a clases 50% de descuento"
+          id="imageLanding"
+          src="img/imageLanding.svg"
+        />
+      </figure>
+      <!-- Productos -->
+      <section class="productosContainer">
+        <!-- Producto 1 -->
+        <div class="producto">
+          <figure class="imagenProducto">
+            <img
+              alt="Camiseta kirby rosa"
+              class="imagen"
+              src="img/imagenProducto1.svg"
+            />
+            <div class="hoverComprar">
+              <span class="comprar">Comprar</span>
+            </div>
+          </figure>
+          <span class="descripcion">Camiseta kirby rosa</span>
+          <span class="precio">COP 37.000</span>
+        </div>
+        <!-- Producto 2 -->
+        <div class="producto">
+          <figure class="imagenProducto">
+            <img
+              alt="Chaqueta peluche cian"
+              class="imagen"
+              src="img/imagenProducto2.svg"
+            />
+            <div class="hoverComprar">
+              <span class="comprar">Comprar</span>
+            </div>
+          </figure>
+          <span class="descripcion">Chaqueta peluche cian</span>
+          <span class="precio">COP 68.990</span>
+        </div>
+        <!-- Producto 3 -->
+        <div class="producto">
+          <figure class="imagenProducto">
+            <img
+              alt="Sweater tejido rosa"
+              class="imagen"
+              src="img/imagenProducto3.svg"
+            />
+            <div class="hoverComprar">
+              <span class="comprar">Comprar</span>
+            </div>
+          </figure>
+          <span class="descripcion">Sweater tejido rosa</span>
+          <span class="precio">COP 31.000</span>
+        </div>
+        <!-- Producto 4 -->
+        <div class="producto">
+          <figure class="imagenProducto">
+            <img
+              alt="Traje formal gris"
+              class="imagen"
+              src="img/imagenProducto4.svg"
+            />
+            <div class="hoverComprar">
+              <span class="comprar">Comprar</span>
+            </div>
+          </figure>
+          <span class="descripcion">Traje formal gris</span>
+          <span class="precio">COP 89.990</span>
+        </div>
+        <!-- Producto 5 -->
+        <div class="producto">
+          <figure class="imagenProducto">
+            <img
+              alt="Conjunto 2 piezas verde"
+              class="imagen"
+              src="img/imagenProducto5.svg"
+            />
+            <div class="hoverComprar">
+              <span class="comprar">Comprar</span>
+            </div>
+          </figure>
+          <span class="descripcion">Conjunto 2 piezas verde</span>
+          <span class="precio">COP 46.000</span>
+        </div>
+        <!-- Producto 6 -->
+        <div class="producto">
+          <figure class="imagenProducto">
+            <img
+              alt="Corset azul"
+              class="imagen"
+              src="img/imagenProducto6.svg"
+            />
+            <div class="hoverComprar">
+              <span class="comprar">Comprar</span>
+            </div>
+          </figure>
+          <span class="descripcion">Corset azul</span>
+          <span class="precio">COP 52.700</span>
+        </div>
+      </section>
+      <!-- Modal -->
+      <section class="modalContainer">
+        <section class="pagoContainer">
+          <div class="pago">
+            <span class="spanPago">PAGO</span>
+          </div>
+          <figure class="imgTarjeta">
+            <img src="img/Visa.svg" />
+            <img src="img/mastercard.svg" />
+            <img src="img/Paypal.svg" />
+          </figure>
+          <div class="formularioPago">
+            <form>
+              <label
+                >Nombre <br />
+                <input type="text" name="nombre"
+              /></label>
+              <br />
+              <div id="formularioTarjeta">
+                <label>Número <br /><input type="text" name="numero" /></label>
+                <label>MM/YY <br /><input type="text" name="fecha" /></label>
+                <label>CVV <br /><input type="text" name="cvv" /></label>
+              </div>
+            </form>
+          </div>
+          <div class="checkoutBoton"></div>
+        </section>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="supportContainer">
+        <div class="contactContainer">
+          <span>CONTACTO</span><span>QUIÉNES SOMOS</span><span>AYUDA</span>
+        </div>
+        <div class="hipervinculo">
+          <a href="#header">IR AL COMIENZO</a>
+        </div>
+      </div>
+      <div class="copyrightContainer">
+        <span>© 2021 CAPYBARA. Terms of use and privacy policy.</span>
+        <div class="footerIcons">
+          <span>ENCUÉNTRANOS EN</span>
+          <img alt="icono linkedin" src="img/linkedin.svg" />
+          <img alt="icono facebook" src="img/facebook.svg" />
+          <img alt="icono instagram" src="img/instagram.svg" />
+          <img alt="icono twitter" src="img/twitter.svg" />
+        </div>
+      </div>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+figure {
+  margin: 0px;
+}
+body {
+  background-color: #ffecec;
+}
+
+/* Header */
+#header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 37px;
+}
+
+#textoLogo {
+  font-family: "Allerta Stencil";
+  color: #ff9ae9;
+  font-size: 39.3372px;
+}
+
+#navegacion {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 44px;
+  font-family: "DM Sans";
+  font-size: 17.9827px;
+}
+
+#navegacion > span:hover {
+  color: #ff9ae9;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+#fondoTextoLogo {
+  background-color: #ffd8d8;
+  border-radius: 6px;
+  padding: 13px 8px;
+}
+
+/* Imagen landing Page  */
+
+#imageLandingContainer {
+  height: 740px;
+  width: 100%;
+}
+
+#imageLanding {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+/* Productos */
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  width: 377px;
+  height: 472px;
+}
+.hoverComprar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 65px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 4px 4px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.imagenProducto {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  cursor: pointer;
+}
+
+.descripcion {
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.precio {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 20px;
+  color: #a18a68;
+}
+
+.comprar {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.productosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 134px;
+}
+.imagenProducto:hover .hoverComprar {
+  opacity: 1;
+}
+
+/* modal */
+
+.modalContainer {
+  background-color: #ffff;
+  position: fixed;
+  height: 650px;
+  width: 850px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagoContainer {
+  background-color: #facaf0;
+  width: 60%;
+  height: 80%;
+}
+
+.pago {
+  width: 50px;
+  height: 30px;
+  border-bottom: 6.14179px solid #ff9ae9;
+}
+.spanPago {
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 23.0282px;
+  color: #646464;
+}
+
+.imgTarjeta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+#formularioTarjeta {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer */
+
+#footer {
+  width: 100%;
+  height: 176px;
+  border-top: 1.10897px solid #d8d8d8;
+  margin-top: 30px;
+
+  font-family: "DM Sans";
+  font-weight: 400;
+  font-size: 17.7436px;
+  color: #707070;
+}
+
+.footerIcons > img {
+  width: 20px;
+  height: 20px;
+}
+
+.supportContainer {
+  display: flex;
+  justify-content: space-between;
+  height: 92px;
+  align-items: center;
+}
+
+.copyrightContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerIcons {
+  display: flex;
+  justify-content: space-around;
+  width: 420px;
+  height: 80px;
+}
+
+.contactContainer {
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contactContainer > span {
+  cursor: pointer;
+}
+
+.hipervinculo a {
+  text-decoration: none;
+  background-color: #ff9ae9;
+  border-radius: 20px;
+  padding: 15px 10px;
+  color: white;
+}
