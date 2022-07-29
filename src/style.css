@@ -131,8 +131,8 @@ body {
 .modalContainer {
   background-color: #ffff;
   position: fixed;
-  height: 650px;
-  width: 850px;
+  height: 550px;
+  width: 790px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -142,9 +142,8 @@ body {
 }
 
 .pagoContainer {
-  background-color: #facaf0;
   width: 60%;
-  height: 80%;
+  height: 92%;
 }
 
 .pago {
@@ -168,6 +167,85 @@ body {
 #formularioTarjeta {
   display: flex;
   justify-content: space-between;
+}
+
+#formularioTarjeta > label > input {
+  border: 2.09348px solid #cedae0;
+  border-radius: 7px;
+  padding: 7px 9px;
+  height: 22px;
+}
+
+#formularioNombre > input {
+  border: 2.09348px solid #cedae0;
+  border-radius: 7px;
+  padding: 7px 9px;
+  height: 22px;
+  width: 453px;
+}
+
+#inputNumero {
+  width: 200px;
+}
+
+.inputFechaCodigo {
+  width: 80px;
+}
+
+.formularioPago > form > label {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14.6543px;
+  color: #646464;
+}
+
+#checkoutBoton {
+  width: 232.64px;
+  height: 40.89px;
+  background: #ff9ae9;
+  border-radius: 9.16442px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 22.4945px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+  cursor: pointer;
+}
+
+#imageCheckout {
+  width: 20.44px;
+  height: 26.95px;
+}
+
+#formularioTarjeta > label {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 14.6543px;
+  color: #646464;
+}
+
+.formularioPago {
+  margin-top: 70px;
+  width: 100%;
+}
+
+#formularioTarjeta {
+  margin-top: 35px;
+}
+
+#checkoutContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#iconoCerrar {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -224,4 +302,8 @@ body {
   border-radius: 20px;
   padding: 15px 10px;
   color: white;
+}
+
+.esconder {
+  display: none;
 }

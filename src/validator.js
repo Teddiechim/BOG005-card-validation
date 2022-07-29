@@ -19,7 +19,9 @@ const validator = {
     for (let i = 0; i < reverseArray.length; i++) {
       suma = suma + Number(reverseArray[i]);
     }
-
+    // if (reverseArray.length == 0) {
+    //   return false;
+    // }
     if (suma % 10 == 0) {
       return true;
     } else {
@@ -37,5 +39,4 @@ const validator = {
   },
 };
 
-//validator.isValid("128937182937");
 export default validator;
