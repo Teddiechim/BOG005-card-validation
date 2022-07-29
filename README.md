@@ -2,23 +2,23 @@
 
 ## Índice
 
-- [1. De qué trata el CAPYBARA](#1-De qué trata el CAPYBARA)
-- [2. Imagen final del proyecto](#2-Imagen final del proyecto)
-- [3. Quiénes son los usuarios](#3-Quiénes son los usuarios)
-- [4. Cómo CAPYBARA resuelve los problemas del usuario](#4-Cómo CAPYBARA resuelve los problemas del usuario)
-- [5. Primer prototipo en papel](#5-Primer prototipo en papel)
-- [6. Mejoras de CAPYBARA](#6-Mejoras de CAPYBARA)
-- [7. Prototipo final](#7-Prototipo final)
+* [1. De qué trata CAPYBARA](#1-De-qué-trata-CAPYBARA)
+* [2. Imagen final del proyecto](#2-Imagen-final-del-proyecto)
+* [3. Quiénes son los usuarios](#3-Quiénes-son-los-usuarios)
+* [4. Cómo CAPYBARA resuelve los problemas del usuario](#4-Cómo-CAPYBARA-resuelve-los-problemas-del-usuario)
+* [5. Primer prototipo en papel](#5-Primer-prototipo-en-papel)
+* [6. Mejoras de CAPYBARA](#6-Mejoras-de-CAPYBARA)
+* [7. Prototipo final](#7-Prototipo-final)
 
----
+***
 
-## 1. De qué trata el CAPYBARA
+## 1. De qué trata CAPYBARA
 
 CAPYBARA es una simulación de un e-commerce de ropa donde su funcionalidad principal es dirigir al usuario a una compra de un producto donde podrá validar si su tarjeta de crédito existe, también permitiendo mantener la privacidad de la misma.
 
 ## 2. Imagen final del proyecto
 
-![gráfica imagen final del proyecto](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![gráfica imagen final del proyecto](https://user-images.githubusercontent.com/47732101/181725661-98e8e6c1-8071-464b-8321-ee82efd1c58f.png)
 
 ## 3. Quiénes son los usuarios
 
@@ -32,7 +32,7 @@ El proyecto CAPYBARA está diseñado para que el usuario se sienta cómodo naveg
 
 ## 5. Primer prototipo en papel
 
-![gráfica imagen final del proyecto](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![gráfica imagen final del proyecto](https://user-images.githubusercontent.com/47732101/181725177-25379dd2-6419-4ce0-852d-1fece9aba665.jpeg)
 
 ## 6. Mejoras de CAPYBARA
 
@@ -40,4 +40,5 @@ Gracias al Feedback que recibí mejoré el rendimiento de mi proyecto al utiliza
 
 ## 7. Prototipo final
 
-![gráfica imagen final del proyecto](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+![gráfica imagen final del proyecto landing page](https://user-images.githubusercontent.com/47732101/181721274-92826879-08f8-4aa0-84d7-9432db0648c5.png)
+![gráfica imagen final del proyecto modal](https://user-images.githubusercontent.com/47732101/181721278-62c285a2-b106-48d6-bf2c-9ba03df787b3.png)

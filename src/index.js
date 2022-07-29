@@ -25,14 +25,17 @@ document.getElementById("iconoCerrar").addEventListener("click", hideModal);
 
 // Funcionalidad Tarjeta
 
-function saveNumber(e) {}
-
-document.getElementById("inputNumero").addEventListener("input", saveNumber);
-
+let number = "";
 function maskNumber(e) {
-  console.log(e);
-  let number = validator.maskify(e.target.value);
-  document.getElementById("inputNumero").value = number;
+  if (e.target.value.length < number.length) {
+    number = number.slice(0, -1);
+    let numberMasked = validator.maskify(number);
+    document.getElementById("inputNumero").value = numberMasked;
+  } else {
+    number = number + e.target.value.charAt(e.target.value.length - 1);
+    let numberMasked = validator.maskify(number);
+    document.getElementById("inputNumero").value = numberMasked;
+  }
 }
 
 document.getElementById("inputNumero").addEventListener("input", maskNumber);
@@ -40,7 +43,6 @@ document.getElementById("inputNumero").addEventListener("input", maskNumber);
 function validateCard(e) {
   let numberCard = document.getElementById("inputNumero").value;
   validator.isValid(numberCard);
-  alert(numberCard);
   if (validator.isValid(numberCard)) {
     alert("La tarjeta es válida.");
   } else {
