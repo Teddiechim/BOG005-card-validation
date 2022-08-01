@@ -1,27 +1,27 @@
 import validator from "./validator.js";
-let segundaVentana = document.getElementById("segundaVentana");
+let secondWindow = document.getElementById("secondWindow");
 
-segundaVentana.classList.add("esconder");
+secondWindow.classList.add("hideWindow");
 
-function comprar() {
-  let segundaVentana = document.getElementById("segundaVentana");
+function toBuy() {
+  let secondWindow = document.getElementById("secondWindow");
 
-  segundaVentana.classList.remove("esconder");
+  secondWindow.classList.remove("hideWindow");
 }
 
-let arrayHover = document.getElementsByClassName("hoverComprar");
+let arrayHover = document.getElementsByClassName("hoverBuy");
 
 for (let i = 0; i < arrayHover.length; i++) {
-  arrayHover[i].addEventListener("click", comprar);
+  arrayHover[i].addEventListener("click", toBuy);
 }
 
 function hideModal() {
-  let segundaVentana = document.getElementById("segundaVentana");
+  let secondWindow = document.getElementById("secondWindow");
 
-  segundaVentana.classList.add("esconder");
+  secondWindow.classList.add("hideWindow");
 }
 
-document.getElementById("iconoCerrar").addEventListener("click", hideModal);
+document.getElementById("iconClose").addEventListener("click", hideModal);
 
 // Funcionalidad Tarjeta
 
@@ -30,20 +30,18 @@ function maskNumber(e) {
   if (e.target.value.length < number.length) {
     number = number.slice(0, -1);
     let numberMasked = validator.maskify(number);
-    document.getElementById("inputNumero").value = numberMasked;
+    document.getElementById("inputNumber").value = numberMasked;
   } else {
     number = number + e.target.value.charAt(e.target.value.length - 1);
     let numberMasked = validator.maskify(number);
-    document.getElementById("inputNumero").value = numberMasked;
+    document.getElementById("inputNumber").value = numberMasked;
   }
 }
 
-document.getElementById("inputNumero").addEventListener("input", maskNumber);
+document.getElementById("inputNumber").addEventListener("input", maskNumber);
 
-function validateCard(e) {
-  let numberCard = document.getElementById("inputNumero").value;
-  validator.isValid(numberCard);
-  if (validator.isValid(numberCard)) {
+function validateCard() {
+  if (validator.isValid(number)) {
     alert("La tarjeta es válida.");
   } else {
     alert("La tarjeta es inválida");
@@ -51,5 +49,5 @@ function validateCard(e) {
 }
 
 document
-  .getElementById("checkoutBoton")
+  .getElementById("checkoutButtom")
   .addEventListener("click", validateCard);

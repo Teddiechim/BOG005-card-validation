@@ -19,13 +19,13 @@ body {
   margin-bottom: 37px;
 }
 
-#textoLogo {
+#textLogo {
   font-family: "Allerta Stencil";
   color: #ff9ae9;
   font-size: 39.3372px;
 }
 
-#navegacion {
+#navegation {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,13 +34,13 @@ body {
   font-size: 17.9827px;
 }
 
-#navegacion > span:hover {
+#navegation > span:hover {
   color: #ff9ae9;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-#fondoTextoLogo {
+#backgroundTextLogo {
   background-color: #ffd8d8;
   border-radius: 6px;
   padding: 13px 8px;
@@ -61,7 +61,7 @@ body {
 
 /* Productos */
 
-.producto {
+.product {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -69,7 +69,7 @@ body {
   width: 377px;
   height: 472px;
 }
-.hoverComprar {
+.hoverBuy {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -84,45 +84,45 @@ body {
   transition: opacity 0.2s ease;
 }
 
-.imagen {
+.image {
   width: 100%;
   height: 100%;
 }
 
-.imagenProducto {
+.imageProduct {
   width: 100%;
   height: 380px;
   position: relative;
   cursor: pointer;
 }
 
-.descripcion {
+.description {
   font-family: "DM Sans";
   font-weight: 400;
   font-size: 20px;
 }
 
-.precio {
+.price {
   font-family: "DM Sans";
   font-weight: 500;
   font-size: 20px;
   color: #a18a68;
 }
 
-.comprar {
+.toBuy {
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 16px;
 }
 
-.productosContainer {
+.productsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 50px;
   margin-top: 134px;
 }
-.imagenProducto:hover .hoverComprar {
+.imageProduct:hover .hoverBuy {
   opacity: 1;
 }
 
@@ -141,12 +141,12 @@ body {
   align-items: center;
 }
 
-.pagoContainer {
+.paymentContainer {
   width: 60%;
   height: 92%;
 }
 
-.pago {
+.payment {
   width: 50px;
   height: 30px;
   border-bottom: 6.14179px solid #ff9ae9;
@@ -158,25 +158,25 @@ body {
   color: #646464;
 }
 
-.imgTarjeta {
+.imgCard {
   display: flex;
   justify-content: space-between;
   margin-top: 70px;
 }
 
-#formularioTarjeta {
+#cardForm {
   display: flex;
   justify-content: space-between;
 }
 
-#formularioTarjeta > label > input {
+#cardForm > label > input {
   border: 2.09348px solid #cedae0;
   border-radius: 7px;
   padding: 7px 9px;
   height: 22px;
 }
 
-#formularioNombre > input {
+#nameForm > input {
   border: 2.09348px solid #cedae0;
   border-radius: 7px;
   padding: 7px 9px;
@@ -184,22 +184,22 @@ body {
   width: 453px;
 }
 
-#inputNumero {
+#inputNumber {
   width: 200px;
 }
 
-.inputFechaCodigo {
+.inputDateAndCode {
   width: 80px;
 }
 
-.formularioPago > form > label {
+.paymentForm > form > label {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 14.6543px;
   color: #646464;
 }
 
-#checkoutBoton {
+#checkoutButtom {
   width: 232.64px;
   height: 40.89px;
   background: #ff9ae9;
@@ -219,19 +219,19 @@ body {
   height: 26.95px;
 }
 
-#formularioTarjeta > label {
+#cardForm > label {
   font-family: "Poppins";
   font-weight: 600;
   font-size: 14.6543px;
   color: #646464;
 }
 
-.formularioPago {
+.paymentForm {
   margin-top: 70px;
   width: 100%;
 }
 
-#formularioTarjeta {
+#cardForm {
   margin-top: 35px;
 }
 
@@ -241,7 +241,7 @@ body {
   align-items: center;
 }
 
-#iconoCerrar {
+#iconClose {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -296,7 +296,7 @@ body {
   cursor: pointer;
 }
 
-.hipervinculo a {
+.hyperlink a {
   text-decoration: none;
   background-color: #ff9ae9;
   border-radius: 20px;
@@ -304,6 +304,6 @@ body {
   color: white;
 }
 
-.esconder {
+.hideWindow {
   display: none;
 }

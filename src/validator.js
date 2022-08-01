@@ -3,26 +3,26 @@ const validator = {
     let split = string.split("");
     let reverseArray = split.reverse();
     for (let i = 1; i < reverseArray.length; i = i + 2) {
-      let numerosPares = reverseArray[i];
-      numerosPares = numerosPares * 2;
-      if (numerosPares >= 10) {
-        let numberToString = numerosPares + "";
-        let suma =
+      let pairNumbers = reverseArray[i];
+      pairNumbers = pairNumbers * 2;
+      if (pairNumbers >= 10) {
+        let numberToString = pairNumbers + "";
+        let addition =
           Number(numberToString.charAt(0)) + Number(numberToString.charAt(1));
-        numerosPares = suma;
+        pairNumbers = addition;
       }
 
-      reverseArray[i] = numerosPares;
+      reverseArray[i] = pairNumbers;
     }
 
-    let suma = 0;
+    let addition = 0;
     for (let i = 0; i < reverseArray.length; i++) {
-      suma = suma + Number(reverseArray[i]);
+      addition = addition + Number(reverseArray[i]);
     }
     if (reverseArray.length == 0) {
       return false;
     }
-    if (suma % 10 == 0) {
+    if (addition % 10 == 0) {
       return true;
     } else {
       return false;
@@ -31,8 +31,8 @@ const validator = {
   maskify: function (string) {
     let substring = string.slice(-4, string.length);
     if (string.length > 4) {
-      let enmascarado = "#".repeat(string.length - 4) + substring;
-      return enmascarado;
+      let masked = "#".repeat(string.length - 4) + substring;
+      return masked;
     } else {
       return string;
     }
